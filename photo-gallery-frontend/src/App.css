@@ -1,0 +1,106 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.Body {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden; /* prevent body from scrolling */
+  overflow-x: hidden;
+  background: #172c05;
+  background: -webkit-linear-gradient(to bottom, #b6ca6e, #172c05);
+  background: linear-gradient(to bottom, #b6ca6e, #172c05);
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.Body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.Body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Hide scrollbar for IE 11 */
+.Body {
+  -ms-overflow-style: none;
+}
+
+.Main {
+  height: 90vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.Main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.Main {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Hide scrollbar for IE 11 */
+.Main {
+  -ms-overflow-style: none;
+}
+
+.RightColumn {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fffdc0;
+  text-align: center;
+  font-size: 25px;
+  color: #0b0e09;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.RightColumn::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.RightColumn {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Hide scrollbar for IE 11 */
+.RightColumn {
+  -ms-overflow-style: none;
+}
+
+.star-rating {
+  font-size: 24px;
+  color: #ccc; /* Default color for empty stars */
+}
+
+.star-filled {
+  color: #f8d71c; /* Yellow color for filled stars */
+}
+
+.SeeMore {
+  text-decoration: none;
+  color: #172c05;
+  font-size: 1.05rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Add a smooth transition for color changes */
+}
+
+.SeeMore:hover {
+  color: #b6ca6e;
+}
